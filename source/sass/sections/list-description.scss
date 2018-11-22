@@ -1,0 +1,51 @@
+.list-description {
+  @include reset-list;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-description__item {
+  position: relative;
+  padding-left: 70px;
+  margin-bottom: 1.5em;
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 50px;
+    height: 50px;
+    background-color: $crimson;
+    border-radius: 50%;
+  }
+
+  &::after {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    font-size: 30px;
+    color: $white;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 2.5em;
+  }
+}
+
+.list-description__item--one::after {
+  content: '1';
+}
+
+.list-description__item--two::after {
+  content: '2';
+}
+
+.list-description__item--three::after {
+  content: '3';
+}
+
+.list-description__text {
+  margin: 0;
+}
