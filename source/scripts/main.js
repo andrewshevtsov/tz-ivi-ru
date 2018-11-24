@@ -1,3 +1,7 @@
 $(document).ready(function() {
-    $(".lorem__top").dotdotdot();
+    $('.lorem__title').dotdotdot({
+      ellipsis: "\u2026 ",
+      after: null,
+      watch: "window"
+    });
 });

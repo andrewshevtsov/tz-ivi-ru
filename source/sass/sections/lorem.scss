@@ -29,10 +29,12 @@
 }
 
 .lorem__title {
-  margin: 5vw 0 10vw 0;
+  margin: 5.5vw 0 10vw 0;
   font-size: 40px;
   font-weight: 400;
   line-height: 44px;
+  max-height: 90px;
+  padding-right: 50px;
   overflow: hidden;
   text-overflow: ellipsis;
   display: -webkit-box;
